@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Accordion</title>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js">
+        </script>
+
+        <script>
+            $(function () {
+                $("#myMenu").accordion({
+                    collapsible: false,
+                    autoHeight: true,
+                    heightStyle: "content",
+                    event: "mouseover"
+                });
+            });
+        </script>
+
+        <style>
+            #myMenu{width:300px;
+                    float: left;}
+
+            #accContent{width:600px;
+                        position:static;
+                        padding: 20px;
+                        float:right}
+            </style>
+
+        </head>
+        <body>
+             
+            <div id="sidebar1">
+            <h1>Accordion</h1>
+            <div  id="myMenu">
+                <h3>List One</h3>
+                <div>
+                    <p>Itme 1</p>
+                    <p>Item 2</p>
+                </div>
+                <h3>List Two</h3>
+                <div>
+                    <p>Item 1</p>
+                    <p>Item 2</p>
+                </div>
+                <h3>Info</h3>
+                <div>
+                    <p>Info</a></p>
+
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+                <p>Lone List</p>
+            </div>
+
+        </div>
+
+
+
+        <div id="accContent">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </div>
+        
+      
+    </body>
+</html>
